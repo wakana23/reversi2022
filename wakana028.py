@@ -26,13 +26,13 @@ class wakana028AI(GameAI):
           [6,2,5,4,4,5,2,6]
       ]
 
-      while True:
-          for y in range(0, board.N):
-              for x in range(0, board.N):
+    　for y in range(board.N):
+            for x in range(board.N):
                 if board.put_and_reverse(x, y, color, reverse=False) > 0:
-                  put_list.append((x,y)) 
-                  get_list.append(board.put_and_reverse(x, y, color, reverse=False))
-                  point_list.append(point[x][y])
+                    put.append((x, y))
+                    get.append(board.put_and_reverse(x, y, color, reverse=False))
+                    O.append(rank[x][y])
+
 
 
         #最大数
